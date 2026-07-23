@@ -39,7 +39,7 @@ ROOT_URLCONF = 'LLemon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,9 +62,33 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'mydb': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'LLemon',
+        'USER': 'root',
+        'PASSWORD':'',
+        'HOST':'127.0.0.1',
+        'PORT':'3306',
+        'OPTIONS': {
+            'init_command':"SET sql_mode='STATIC_TRANS_TABLES'"
+        },
     }
 }
 
+# DATABASES = {  
+#     'default': {  
+#         'ENGINE': 'django.db.backends.mysql',  
+#         'NAME': 'my_database',  
+#         'USER': 'root',  
+#         'PASSWORD': 'your_password',  
+#         'HOST': '127.0.0.1',  
+#         'PORT': '3306',  
+#         'OPTIONS': {  
+#             'init_command': "SET sql_mode='STATIC_TRANS_TABLES'"  
+#         }  
+#     }  
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
