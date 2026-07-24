@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import LLAPIMenuItem, LLAPIMenu
 
-# Register your models here.
+admin.site.register(LLAPIMenu)
+admin.site.register(LLAPIMenuItem)

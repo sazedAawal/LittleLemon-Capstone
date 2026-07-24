@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class LLAPIMenuItem(models.Model):
     title = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -8,6 +8,9 @@ class LLAPIMenuItem(models.Model):
 
     def get_item(self):
         return f'{self.title} : {str(self.price)}'
+
+    def __str__(self):
+        return f'{self.title} : {self.price}'
 
 class LLAPIMenu(models.Model):
     title = models.CharField(max_length=255)
