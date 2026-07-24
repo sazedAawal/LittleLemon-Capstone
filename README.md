@@ -32,31 +32,31 @@
 
 
 **URLs**
-http://127.0.0.1:8000/
-http://127.0.0.1:8000/about/
-http://127.0.0.1:8000/menu/
-http://127.0.0.1:8000/menu_item/<id>/
-http://127.0.0.1:8000/book/
-http://127.0.0.1:8000/admin/
+- http://127.0.0.1:8000/
+- http://127.0.0.1:8000/about/
+- http://127.0.0.1:8000/menu/
+- http://127.0.0.1:8000/menu_item/<id>/
+- http://127.0.0.1:8000/book/
+- http://127.0.0.1:8000/admin/
 
-http://127.0.0.1:8000/router/users/
-http://127.0.0.1:8000/router/test-users/
-http://127.0.0.1:8000/auth/users/
+- http://127.0.0.1:8000/router/users/
+- http://127.0.0.1:8000/router/test-users/
+- http://127.0.0.1:8000/auth/users/
 
-http://127.0.0.1:8000/auth/users/me/
-http://127.0.0.1:8000/auth/token/login/
-http://127.0.0.1:8000/auth/token/logout/
+- http://127.0.0.1:8000/auth/users/me/
+- http://127.0.0.1:8000/auth/token/login/
+- http://127.0.0.1:8000/auth/token/logout/
 
-http://127.0.0.1:8000/api-auth/login/
-http://127.0.0.1:8000/api-auth/logout/
+- http://127.0.0.1:8000/api-auth/login/
+- http://127.0.0.1:8000/api-auth/logout/
 
-http://127.0.0.1:8000/api/api-menu/
-http://127.0.0.1:8000/api/bookings/
-http://127.0.0.1:8000/api/bookings/<id>/
-http://127.0.0.1:8000/api/api-token-auth/
+- http://127.0.0.1:8000/api/api-menu/
+- http://127.0.0.1:8000/api/bookings/
+- http://127.0.0.1:8000/api/bookings/<id>/
+- http://127.0.0.1:8000/api/api-token-auth/
 
-http://127.0.0.1:8000/api/menu-items/
-http://127.0.0.1:8000/api/menu-items/<id>
-http://127.0.0.1:8000/api/message/
-http://127.0.0.1:8000/api/registration/
-http://127.0.0.1:8000/api/test/menu-items-test/
+- http://127.0.0.1:8000/api/menu-items/
+- http://127.0.0.1:8000/api/menu-items/<id>
+- http://127.0.0.1:8000/api/message/
+- http://127.0.0.1:8000/api/registration/
+- http://127.0.0.1:8000/api/test/menu-items-test/
