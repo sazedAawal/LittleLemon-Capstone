@@ -1,16 +1,13 @@
 from django.urls import path
 from . import views
-from .views import MenuView, BookingView
+from .views import MenuView, BookingView, RegistrationView
 from rest_framework.authtoken.views import obtain_auth_token
+
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('menu/', MenuView.as_view()),
-    path('booking/', BookingView.as_view()),
-    path('menu/', views.MenuItemsView.as_view()),
-    path('menu/<int:pk>', views.SingleMenuItemView.as_view()),
-    path('api-token-auth/', obtain_auth_token),
-    path('menu-items/', views.MenuItemsView.as_view()),
-    path('menu-items/<int:pk>', views.SingleMenuItemView.as_view()),
-    path('message/',views.msg),
+    path('about/', views.about, name='about'),
+    path('menu/', views.menu, name='menu'),
+    path('menu_item/<int:pk>/', views.display_menu_items, name="menu_item"),
+    path('book/', views.book, name='book'),
 ]
